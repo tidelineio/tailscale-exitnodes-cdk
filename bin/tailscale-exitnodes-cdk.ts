@@ -18,6 +18,6 @@ const stackForRegion = function(id: string, region: string, exitNodeName: string
 }
 
 const stacks = [
-  stackForRegion('ExitNodesStackSydney', 'ap-southeast-2', "TSSydneyExitNode"),
-  stackForRegion('ExitNodesStackZurich', 'eu-central-2', "TSZurichExitNode")
+  stackForRegion('ExitNodesStackSingapore', 'ap-southeast-1', "TSSingaporeExitNode"),
+  // stackForRegion('ExitNodesStackOregon', 'us-west-2', "TSOregonExitNode")
 ];
