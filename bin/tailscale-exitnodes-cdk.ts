@@ -22,6 +22,5 @@ const stacks = [
   stackForRegion('ExitNodesStackOhio', 'us-east-2', "Ohio"),
   stackForRegion('ExitNodesStackOregon', 'us-west-2', "Oregon"),
   stackForRegion('ExitNodesStackLondon', 'eu-west-2', "London"),
-  stackForRegion('ExitNodesStackZurich', 'eu-central-2', "Zurich"),
   stackForRegion('ExitNodesStackSydney', 'ap-southeast-2', "Sydney")
 ];
