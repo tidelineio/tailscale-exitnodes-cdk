@@ -14,5 +14,15 @@ regions you want to use:
 
 Next, set the environment variable `TAILSCALE_AUTH_KEY` to your tailscale auth key and deploy with `cdk deploy`.
 
+## GitHub Actions Deployment
+
+This project is configured to automatically deploy to AWS when changes are pushed to the `main` branch. To enable this, you need to configure the following secrets in your GitHub repository's settings:
+
+*   `AWS_ACCESS_KEY_ID`: Your AWS access key ID.
+*   `AWS_SECRET_ACCESS_KEY`: Your AWS secret access key.
+*   `TAILSCALE_AUTH_KEY`: Your Tailscale auth key.
+
+The GitHub Actions workflow will use these secrets to authenticate with AWS and Tailscale, and then run `cdk bootstrap` and `cdk deploy` to provision the resources.
+
 > **Warning**
 > This stack deploys EC2 instances and has cost implications!
